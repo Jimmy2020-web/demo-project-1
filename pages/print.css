@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: NikoshBAN;
+    font-weight: 100;
+    font-style: normal;
+    src: url(./Fonts/NikoshBAN.ttf);
+}
+
+body {
+    font-family: 'Poppins', sans-serif, NikoshBAN;
+}
+
+.pageOutsid {
+    display: flex;
+    justify-content: center;
+    height: 11.7in;
+    padding: .5rem;
+    margin: .5rem;
+}
+.pageA4 {
+    width: 8.27in;
+    height: 11.7in;
+    padding: 1rem;
+}
+
+.pageBorder {
+    position: relative;
+    text-align: justify;
+    font-size: 22px;
+    padding: 1.6rem 1rem;
+    height: 5in;
+    border: 20px solid transparent;
+    border-image: url(./finalb.jpg) 155 round;
+    background-image: url(./dg.jpg);
+    background-size: 5rem;
+    outline: 1.5px solid;
+}
+.pageTitle {
+    text-align: center;
+    font-size: 35px;
+}
+.printPara {
+    line-height: 1.8rem;
+}
+
+.devloper {
+    position: absolute;
+    font-size: 12px;
+    color: #646161;
+    bottom: .5rem;
+    left: .5rem;
+}
+
+#cdate {
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    font-size: 18px;
+    font-family: NikoshBAN;
+}
+
+#one{
+    padding-right: 2rem;
+}
+
+#Cinfo {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 20px;
+    text-align: center !important;
+}

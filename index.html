@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baibahik</title>
+    <link rel="icon" href="./pages/titlei2.jpg" type="image/png/gif/jpg">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li id="boibhik">বৈবাহিক সনদ</li>
+                <li id="nagorik">নাগরিক্ত সনদ</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="dignerInfo">
+            <div class="info1">
+                <img src="./pages/Sagor pp.jpg" alt="">
+            </div>
+            <div class="info1">
+                <h3>SHAHINUR ISLAM</h3>
+                <p>Front end web Developer</p>
+                <p>Call: +880 1761 293 854</p>
+            </div>
+        </div>
+        <div class="card-box">
+            <div id="stats"> প্রথম ধাপ </div>
+            <div id="stats1">দ্বিতীয় ধাপ</div>
+            <div id="stats2">তৃতীয় ধাপ</div>
+            <div id="section">
+                <div id="slider">
+                    <p id="title">স্থায়ী ঠিকানা পূরন করুন :- </p>
+                    <div class="card">
+                        <div class="cadr-inf">
+                            <p class="addInfo">জেলাঃ</p>
+                            <p class="addInfo">উপজেলাঃ</p>
+                            <p class="addInfo">ইউনিয়নঃ</p>
+                            <p class="addInfo">চেয়ারম্যানঃ</p>
+                        </div>
+                        <div class="cadr-inf">
+                            <select name="" id="dis" onchange="getItem(this.id, 'polish')">
+                                <option value="">--নির্বাচন করুন--</option>
+                                <option value="নওগাঁ">নওগাঁ</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <select name="" id="polish" onchange="getItem2(this.id, 'union')"><option value="">--নির্বাচন করুন--</option></select>
+                            <select name="" id="union" onchange="getItem3(this.id, 'chair')">
+                                <option value="">--নির্বাচন করুন--</option>
+                            </select>
+                            <select name="" id="chair">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button class="btnB" id="clear" onclick="Resate()">Clear</button>
+                        <p id="sonod_Name">উপরের মেনু থেকে সনদ নির্বচন করুন</p>
+                        <button class="btnN" onclick="next()">Next</button>
+                    </div>
+                </div>
+                <div id="slider">
+                    <h3 id="title">ব্যক্তিগত তথ্য পূরন করুনঃ-</h3>
+                    <div class="card">
+                        <div class="cadr-inf">
+                            <p>নিজ নামঃ</p>
+                            <p>পিতা/স্বামীর নামঃ</p>
+                            <p>মাতার নামঃ</p>
+                            <p>গ্রামঃ</p>
+                            <p>ওয়ার্ড নংঃ</p>
+                            <p>ডাকঘরঃ</p>
+                        </div>
+                        <div class="cadr-inf">
+                            <input type="text" name="" id="self_name">
+                            <input type="text" name="" id="fh_name">
+                            <input type="text" name="" id="mother_name">
+                            <input type="text" name="" id="vil_name">
+                            <input type="text" name="" id="w_name">
+                            <input type="text" name="" id="post_name">
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button class="btnB" onclick="back()">Back</button>
+                        <p id="sonodN2">20</p>
+                        <button class="btnN" onclick="next2()">Next</button>
+                    </div>
+                </div>
+                <div id="slider">
+                    <h3 id="title">ব্যক্তিগত তথ্য এবং ঠিকানা যাচাই করুন...!</h3>
+                    <div class="card">
+                        <div class="cadr-inf">
+                            <div class="view">
+                                <p id="sonodN3">30</p>
+                                <span>নামঃ </span><span id="selfName1"></span>
+                                <span>পিতা/স্বামীর নামঃ </span><span id="fh_name1"></span>
+                                <span>মাতারঃ </span><span id="mother_name1"></span>
+                                <span>গ্রামঃ </span><span id="vil_name1"></span>
+                                <span>ওয়ার্ড নংঃ </span><span id="w_name1"></span>
+                                <span>ডাকঘরঃ </span><span id="post_name1"></span>
+                                <span>ইউনিয়নঃ </span><span id="up"></span>
+                                <span>উপজেলাঃ </span><span id="thana"></span>
+                                <span>জেলাঃ </span><span id="zila"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button class="btnB" onclick="back2()">Back</button>
+                        <p>আমাদের সেবাটি ব্যবহারের জন্য ধন্যবাদ.!</p>
+                        <button class="btnN" onclick="printA4()">Print</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./index.js"></script>
+</body>
+</html>
