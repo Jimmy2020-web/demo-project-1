@@ -37,7 +37,7 @@ function getItem(dis, polish) {
   if (dis == "নওগাঁ") {
     var optionrry = ["--নির্বাচন করুন--", "রাণীনগর", "আত্রাই","মহাদেবপুর", "বদলগাছী", "পন্তীতলা", "ধামইরহাট", "নিয়ামতপুর", "মান্দা", "পোরশা", "সাপাহার", "নওগাঁ-সদর"];
   } else {
-    var optionrry = ["--Comming Soen--","Comming", "Comming"];
+    var optionrry = ["--Coming Soon--","Coming", "Coming"];
   }
 
   for (var option in optionrry) {
@@ -58,7 +58,7 @@ function getItem2(polish, union) {
   if (polish == "রাণীনগর") {
     var optionrry = ["--নির্বাচন করুন--", "০১নং খট্টেশ্বর রাণীনগর", "০২নং কাশিমপুর","০৩নং গোনা", "০৪নং কালিগ্রাম", "০৫নং বড়গাছা", "০৬নং পারইল", "০৭নং একডালা", "০৮নং মিরাট"];
   } else {
-    var optionrry = ["--Comming Soen--","Comming", "Comming"];
+    var optionrry = ["--Coming Soon--","Coming", "Coming"];
   }
 
   for (var option in optionrry) {
@@ -79,10 +79,12 @@ function getItem3(union, chair) {
   if (union == "০২নং কাশিমপুর") {
     var optionrry = ["মোঃ মকলেছুর রহমান (বাবু)"];
   } else if (union == "০১নং খট্টেশ্বর রাণীনগর") {
-    var optionrry = ["শাহীনুর ইসলাম"];
+    var optionrry = ["মোছাঃ চন্দনা সারমিন রুমকী"];
   } else if (union == "০৩নং গোনা") {
-    var optionrry = ["আব্দুল হাকিম"];
-  }
+    var optionrry = ["মোঃ আব্দুল খালেক"];
+  } else { 
+    var optionrry = ["Coming"]
+  };
 
   for (var option in optionrry) {
     var pair = optionrry[option];
