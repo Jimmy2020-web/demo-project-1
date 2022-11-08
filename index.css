@@ -1,31 +1,72 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @font-face {
-    font-family: NikoshBAN;
+    font-family: Nikosh;
     font-weight: 100;
     font-style: normal;
-    src: url(./Fonts/NikoshBAN.ttf);
+    src: url(./Fonts/Nikosh.ttf);
 }
 
 body {
-    font-family: 'Poppins', sans-serif, NikoshBAN;
+    font-family: 'Poppins', sans-serif, Nikosh;
     color: #000000c2;
     background: linear-gradient(#333399, #ff00cc);
     overflow: hidden;
 }
 
+.dpop {
+    display: none;
+}
+
+.dpopb {
+    display: block;
+}
+
+#popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: #000000ab;
+    z-index: 99;
+}
+
+.popUp_crd {
+    position: relative;
+    background: #ddd;
+    padding: 2rem;
+    font-weight: bold;
+    color: orangered;
+    border-radius: 1rem;
+}
+
+#time {
+    position: absolute;
+    top: -.8rem;
+    right: -.8rem;
+    background: #ddd;
+    border-radius: 50%;
+    padding: 5px 7px;
+    font-size: 1.2rem;
+    color: #000;
+}
+
 .nav {
-    background: #ffffffb1;
+    background: #ffffffbb;
     position: fixed;
     border-bottom: 1px solid #ffffffbc;
     box-shadow: 0px 2px 4px #ffffff94;
     width: 100%;
     z-index: 50;
 }
+
 .nav ul {
     display: grid;
     grid-template-columns: auto auto;
@@ -35,9 +76,9 @@ body {
 
 .nav ul li {
     list-style: none;
-    padding: 10px 25px;
+    padding: 8px 25px;
     cursor: pointer;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 main {
@@ -48,8 +89,8 @@ main {
     height: 100vh;
 }
 
-main .card-box{
-    background: ##ffffffb8;
+main .card-box {
+    background: #ffffffbb;
     border: 2px solid #ffffffbc;
     border-radius: 1.2rem;
     padding: 2rem;
@@ -57,7 +98,7 @@ main .card-box{
     min-height: 350px;
     overflow: hidden;
     box-shadow: 4px 4px 15px #ffffff94,
-                -4px 4px 15px #ffffff94;
+        -4px 4px 15px #ffffff94;
 }
 
 .dignerInfo {
@@ -106,7 +147,9 @@ main .card-box{
     margin-right: 4rem;
 }
 
-#stats, #stats1, #stats2 {
+#stats,
+#stats1,
+#stats2 {
     background: #000c;
     color: #ffee01;
     padding: .8rem 2.5rem;
@@ -117,7 +160,7 @@ main .card-box{
     border-radius: 15px 15px 0;
     transition: .5s ease;
     box-shadow: 2px 2px 4px #e9fe05a7,
-                -2px -2px 4px #e9fe05a7;
+        -2px -2px 4px #e9fe05a7;
     border: 1px solid #ffee01;
 }
 
@@ -135,17 +178,18 @@ main .card-box{
     transform: translateX(0px);
     transition: .5s ease;
 }
+
 .back-box2 {
     transform: translateX(680px);
     transition: .5s ease;
 }
 
-.dnone{
+.dnone {
     opacity: 0;
     transition: .5s ease;
 }
 
-.dblock{
+.dblock {
     opacity: 1;
     transition: .5s ease;
 }
@@ -161,7 +205,7 @@ main .card-box{
 .card {
     display: grid;
     justify-content: space-between;
-    grid-template-columns: 130px 480px;
+    grid-template-columns: 160px 450px;
 }
 
 p.addInfo {
@@ -185,6 +229,7 @@ p.addInfo {
 .cadr-inf {
     padding: 1.2rem 0;
 }
+
 .cadr-inf p {
     font-size: 1.3rem;
     padding: .6rem 0;
@@ -206,6 +251,7 @@ p.addInfo {
     background: #fcfcfc18;
     outline: none;
 }
+
 .cadr-inf select {
     display: block;
     width: 100%;
@@ -224,12 +270,15 @@ p.addInfo {
     grid-template-columns: auto auto auto;
     margin-top: -1.2rem;
 }
- .btn p {
+
+.btn p {
     font-size: 1.5rem;
     font-weight: bold;
     color: #003a0f;
- }
-.btnB, .btnN {
+}
+
+.btnB,
+.btnN {
     cursor: pointer;
     background: #0000007d;
     color: white;
@@ -242,7 +291,7 @@ p.addInfo {
     background: #000;
     color: yellow;
     box-shadow: 2px 2px 4px #e9fe05a7,
-                -2px -2px 4px #e9fe05a7;
+        -2px -2px 4px #e9fe05a7;
     border: 1px solid #ffee01;
 }
 
@@ -250,6 +299,6 @@ p.addInfo {
     background: #000;
     color: yellow;
     box-shadow: 2px 2px 4px #e9fe05a7,
-                -2px -2px 4px #e9fe05a7;
+        -2px -2px 4px #e9fe05a7;
     border: 1px solid #ffee01;
 }

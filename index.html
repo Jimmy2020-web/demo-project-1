@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,18 @@
     <link rel="icon" href="./pages/titlei2.jpg" type="image/png/gif/jpg">
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
+    <div id="ts">
+        <div id="popup">
+            <span class="popUp_crd">
+                <samp id="time"></samp>
+                <p>This web Application use Only PC/Laptop not for mobile. <br> এই ওয়েব অ্যাপ্লিকেশন শুধুমাত্র
+                    পিসি/ল্যাপটপ ব্যবহার করে মোবাইলের জন্য নয়।</p> <br>
+                <p>Any complaint please Mail us <span> sagorhossin76@gmaail.com</span></p>
+            </span>
+        </div>
+    </div>
     <header>
         <div class="nav">
             <ul>
@@ -48,7 +60,9 @@
                                 <option value="নওগাঁ">নওগাঁ</option>
                                 <option value="Other">Other</option>
                             </select>
-                            <select name="" id="polish" onchange="getItem2(this.id, 'union')"><option value="">--নির্বাচন করুন--</option></select>
+                            <select name="" id="polish" onchange="getItem2(this.id, 'union')">
+                                <option value="">--নির্বাচন করুন--</option>
+                            </select>
                             <select name="" id="union" onchange="getItem3(this.id, 'chair')">
                                 <option value="">--নির্বাচন করুন--</option>
                             </select>
@@ -118,4 +132,5 @@
     <footer></footer>
     <script src="./index.js"></script>
 </body>
+
 </html>

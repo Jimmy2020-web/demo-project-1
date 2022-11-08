@@ -1,3 +1,42 @@
+const timed = document.getElementById("time");
+
+function startTimer(duration, display) {
+  var timer = duration,
+    minutes,
+    seconds;
+  setInterval(function () {
+    minutes = parseInt(timer / 60, 10);
+    seconds = parseInt(timer % 60, 10);
+
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    display.textContent = `${seconds}`;
+
+    if (--timer < 0) {
+      timer = duration;
+    }
+  }, 1000);
+}
+
+window.onload = function () {
+  var fiveMinutes = 60 * 0.14,
+    display = document.querySelector("#time");
+  startTimer(fiveMinutes, display);
+};
+
+const popUp = document.getElementById("ts");
+
+popUp.classList.add("dpopb");
+
+function poptime() {
+  popUp.classList.replace("dpopb", "dpop");
+}
+
+setTimeout(() => {
+  poptime();
+}, 9000);
+
 const boibhik = document.getElementById("boibhik");
 const nagorik = document.getElementById("nagorik");
 const sonod_Name = document.getElementById("sonod_Name");
@@ -35,9 +74,22 @@ function getItem(dis, polish) {
   polish.innerHTML = "";
 
   if (dis == "নওগাঁ") {
-    var optionrry = ["--নির্বাচন করুন--", "রাণীনগর", "আত্রাই","মহাদেবপুর", "বদলগাছী", "পন্তীতলা", "ধামইরহাট", "নিয়ামতপুর", "মান্দা", "পোরশা", "সাপাহার", "নওগাঁ-সদর"];
+    var optionrry = [
+      "--নির্বাচন করুন--",
+      "রাণীনগর",
+      "আত্রাই",
+      "মহাদেবপুর",
+      "বদলগাছী",
+      "পন্তীতলা",
+      "ধামইরহাট",
+      "নিয়ামতপুর",
+      "মান্দা",
+      "পোরশা",
+      "সাপাহার",
+      "নওগাঁ-সদর",
+    ];
   } else {
-    var optionrry = ["--Coming Soon--","Coming", "Coming"];
+    var optionrry = ["--Coming Soon--", "Coming", "Coming"];
   }
 
   for (var option in optionrry) {
@@ -47,7 +99,7 @@ function getItem(dis, polish) {
     newOption.innerHTML = pair;
     polish.options.add(newOption);
   }
-};
+}
 
 function getItem2(polish, union) {
   var polish = document.getElementById("polish").value;
@@ -56,9 +108,21 @@ function getItem2(polish, union) {
   union.innerHTML = "";
 
   if (polish == "রাণীনগর") {
-    var optionrry = ["--নির্বাচন করুন--", "০১নং খট্টেশ্বর রাণীনগর", "০২নং কাশিমপুর","০৩নং গোনা", "০৪নং কালিগ্রাম", "০৫নং বড়গাছা", "০৬নং পারইল", "০৭নং একডালা", "০৮নং মিরাট"];
+    var optionrry = [
+      "--নির্বাচন করুন--",
+      "০১নং খট্টেশ্বর রাণীনগর",
+      "০২নং কাশিমপুর",
+      "০৩নং গোনা",
+      "০৬নং কালিগ্রাম",
+      "০৫নং বড়গাছা",
+      "০৪নং পারইল",
+      "০৭নং একডালা",
+      "০৮নং মিরাট",
+    ];
+  } else if (polish == "নওগাঁ-সদর") {
+    var optionrry = ["--নির্বাচন করুন--", "০৭নং শৈলগাছী"];
   } else {
-    var optionrry = ["--Coming Soon--","Coming", "Coming"];
+    var optionrry = ["--Coming Soon--", "Coming", "Coming"];
   }
 
   for (var option in optionrry) {
@@ -66,9 +130,9 @@ function getItem2(polish, union) {
     var newOption = document.createElement("option");
     newOption.value = pair;
     newOption.innerHTML = pair;
-    union.options.add(newOption)
+    union.options.add(newOption);
   }
-};
+}
 
 function getItem3(union, chair) {
   var union = document.getElementById("union").value;
@@ -79,12 +143,12 @@ function getItem3(union, chair) {
   if (union == "০২নং কাশিমপুর") {
     var optionrry = ["মোঃ মকলেছুর রহমান (বাবু)"];
   } else if (union == "০১নং খট্টেশ্বর রাণীনগর") {
-    var optionrry = ["মোছাঃ চন্দনা সারমিন রুমকী"];
+    var optionrry = ["চন্দদনা সারমিন"];
   } else if (union == "০৩নং গোনা") {
-    var optionrry = ["মোঃ আব্দুল খালেক"];
-  } else { 
-    var optionrry = ["Coming"]
-  };
+    var optionrry = ["আব্দুস সাত্তার"];
+  } else if (union == "০৭নং শৈলগাছী") {
+    var optionrry = ["সেলিম সরদার"];
+  }
 
   for (var option in optionrry) {
     var pair = optionrry[option];
@@ -93,7 +157,7 @@ function getItem3(union, chair) {
     newOption.innerHTML = pair;
     chair.options.add(newOption);
   }
-};
+}
 
 function next() {
   const printIT = localStorage.getItem("printIT");
@@ -178,5 +242,5 @@ function back2() {
 }
 
 function printA4() {
-   window.open("./pages/printPage.html", "", "width=600px").focus();
+  window.open("./pages/printPage.html", "", "width=600px").focus();
 }
