@@ -146,9 +146,9 @@ function getItem3(union, chair) {
   if (union == "০২নং কাশিমপুর") {
     var optionrry = ["মোঃ মকলেছুর রহমান (বাবু)"];
   } else if (union == "০১নং খট্টেশ্বর রাণীনগর") {
-    var optionrry = ["চন্দদনা সারমিন"];
+    var optionrry = ["মোছাঃ চন্দনা সারমিন রুমকী"];
   } else if (union == "০৩নং গোনা") {
-    var optionrry = ["আব্দুস সাত্তার"];
+    var optionrry = ["মোঃ আব্দুল খালেক"];
   } else if (union == "০৭নং শৈলগাছী") {
     var optionrry = ["সেলিম সরদার"];
   }
