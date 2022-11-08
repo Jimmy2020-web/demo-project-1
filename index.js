@@ -26,8 +26,11 @@ window.onload = function () {
 };
 
 const popUp = document.getElementById("ts");
-
 popUp.classList.add("dpopb");
+
+popUp.addEventListener("click", () => {
+  popUp.classList.replace("dpopb", "dpop");
+})
 
 function poptime() {
   popUp.classList.replace("dpopb", "dpop");
