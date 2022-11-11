@@ -40,6 +40,23 @@ setTimeout(() => {
   poptime();
 }, 9000);
 
+var lung = document.getElementById("lun");
+var isShow = true;
+
+lung.addEventListener("click", () => {
+  if (isShow) {
+    lung.innerHTML = `English <i class="fa-sharp fa-solid fa-earth-americas"></i>`;
+    document.querySelector("#boibhik").innerHTML = "Marriage Certificate";
+    document.querySelector("#nagorik").innerHTML = "Citizenship certificate";
+    isShow = false;
+  } else {
+    lung.innerHTML = `বাংলা <i class="fa-sharp fa-solid fa-earth-americas"></i>`;
+    document.querySelector("#boibhik").innerHTML = "বৈবাহিক সনদ";
+    document.querySelector("#nagorik").innerHTML = "নাগরিকত্ব সনদ";
+    isShow = true;
+  }
+});
+
 const boibhik = document.getElementById("boibhik");
 const nagorik = document.getElementById("nagorik");
 const sonod_Name = document.getElementById("sonod_Name");
