@@ -11,7 +11,7 @@ function startTimer(duration, display) {
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
-    display.textContent = `${seconds}`;
+    display.textContent = `In close ${seconds} S`;
 
     if (--timer < 0) {
       timer = duration;
@@ -21,16 +21,12 @@ function startTimer(duration, display) {
 
 window.onload = function () {
   var fiveMinutes = 60 * 0.14,
-    display = document.querySelector("#time");
+    display = document.querySelector("#closeTime");
   startTimer(fiveMinutes, display);
 };
 
 const popUp = document.getElementById("ts");
 popUp.classList.add("dpopb");
-
-popUp.addEventListener("click", () => {
-  popUp.classList.replace("dpopb", "dpop");
-})
 
 function poptime() {
   popUp.classList.replace("dpopb", "dpop");
@@ -39,7 +35,12 @@ function poptime() {
 setTimeout(() => {
   poptime();
 }, 9000);
-console.log("Sagor");
+
+const closePop = document.querySelector("#time");
+closePop.addEventListener("click", () => {
+  popUp.classList.replace("dpopb", "dpop");
+});
+
 var lung = document.getElementById("lun");
 var isShow = true;
 
@@ -47,12 +48,33 @@ lung.addEventListener("click", () => {
   if (isShow) {
     lung.innerHTML = `English <i class="fa-sharp fa-solid fa-earth-americas"></i>`;
     document.querySelector("#boibhik").innerHTML = "Marriage Certificate";
-    document.querySelector("#nagorik").innerHTML = "Citizenship certificate";
+    document.querySelector("#nagorik").innerHTML = "Citizenship Certificate";
+    document.querySelector(
+      "#stats"
+    ).innerHTML = `1st <i class="fa-solid fa-arrow-right"></i>`;
+    document.querySelector(
+      "#stats1"
+    ).innerHTML = `2nd <i class="fa-solid fa-arrow-right"></i>`;
+    document.querySelector(
+      "#stats2"
+    ).innerHTML = `3rd <i class="fa-solid fa-arrow-right"></i>`;
+    document.querySelector("#title").innerHTML =
+      "Fill in the permanent address :-";
     isShow = false;
   } else {
     lung.innerHTML = `বাংলা <i class="fa-sharp fa-solid fa-earth-americas"></i>`;
     document.querySelector("#boibhik").innerHTML = "বৈবাহিক সনদ";
     document.querySelector("#nagorik").innerHTML = "নাগরিকত্ব সনদ";
+    document.querySelector(
+      "#stats"
+    ).innerHTML = `১ম <i class="fa-solid fa-arrow-right"></i>`;
+    document.querySelector(
+      "#stats1"
+    ).innerHTML = `২য় <i class="fa-solid fa-arrow-right"></i>`;
+    document.querySelector(
+      "#stats2"
+    ).innerHTML = `৩য় <i class="fa-solid fa-arrow-right"></i>`;
+    document.querySelector("#title").innerHTML = "স্থায়ী ঠিকানা পূরণ করুন :-";
     isShow = true;
   }
 });
