@@ -230,7 +230,7 @@ main .card-box {
     grid-template-columns: 160px 450px;
 }
 
-p.addInfo {
+p.addInfoD, .addInfoT, .addInfoU, .addInfoC {
     margin-top: 14px;
     color: #000;
 }

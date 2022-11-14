@@ -60,6 +60,11 @@ lung.addEventListener("click", () => {
     ).innerHTML = `3rd <i class="fa-solid fa-arrow-right"></i>`;
     document.querySelector("#title").innerHTML =
       "Fill in the permanent address :-";
+    document.querySelector(".addInfoD").innerHTML =
+      "District:";
+    document.querySelector(".addInfoT").innerHTML = "Upazila:";
+    document.querySelector(".addInfoU").innerHTML = "Union:";
+    document.querySelector(".addInfoC").innerHTML = "Chairman:";
     isShow = false;
   } else {
     lung.innerHTML = `বাংলা <i class="fa-sharp fa-solid fa-earth-americas"></i>`;
@@ -75,6 +80,10 @@ lung.addEventListener("click", () => {
       "#stats2"
     ).innerHTML = `৩য় <i class="fa-solid fa-arrow-right"></i>`;
     document.querySelector("#title").innerHTML = "স্থায়ী ঠিকানা পূরণ করুন :-";
+    document.querySelector(".addInfoD").innerHTML = "জেলাঃ";
+    document.querySelector(".addInfoT").innerHTML = "উপজেলাঃ";
+    document.querySelector(".addInfoU").innerHTML = "ইউনিয়নঃ";
+    document.querySelector(".addInfoC").innerHTML = "চেয়ারম্যানঃ";
     isShow = true;
   }
 });
