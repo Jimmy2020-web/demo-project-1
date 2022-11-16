@@ -199,6 +199,8 @@ function getItem3(union, chair) {
     var optionrry = ["মোঃ আব্দুল খালেক"];
   } else if (union == "০৭নং শৈলগাছী") {
     var optionrry = ["সেলিম সরদার"];
+  } else if (union == "০৪নং পারইল") {
+    var optionrry = ["মোঃ জাহিদুর রহমান"];
   }
 
   for (var option in optionrry) {
@@ -298,5 +300,4 @@ function back2() {
 }
 
 function printA4() {
-  window.open("./pages/printPage.html", "", "width=600px").focus();
-}
+  window.open("./pages/printPage.html", "", "width=600px")};
