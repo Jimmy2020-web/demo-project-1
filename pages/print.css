@@ -26,14 +26,14 @@ body {
 .pageA4 {
     width: 8.27in;
     height: 11.7in;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 .pageBorder {
     position: relative;
     text-align: justify;
     font-size: 22px;
-    height: 5in;
+    height: 5.2in;
     border: 20px solid transparent;
     border-image: url(./finalb.jpg) 155 round;
     background-image: url(./bd2.png);
