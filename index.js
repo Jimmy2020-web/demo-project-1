@@ -304,4 +304,4 @@ function back2() {
 }
 
 function printA4() {
-  window.open("./pages/printPage.html", "", "width=600px")};
+  window.open("./pages/printPage.html", "", "width=700px")};
