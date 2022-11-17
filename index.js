@@ -201,6 +201,8 @@ function getItem3(union, chair) {
     var optionrry = ["সেলিম সরদার"];
   } else if (union == "০৪নং পারইল") {
     var optionrry = ["মোঃ জাহিদুর রহমান"];
+  } else {
+    var optionrry = ["Call: 01761-293854"]
   }
 
   for (var option in optionrry) {

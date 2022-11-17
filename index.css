@@ -222,7 +222,7 @@ main .card-box {
     font-weight: bold;
     text-align: center;
     border-bottom: 2px solid #ffffffb5;
-    background: linear-gradient(to right, #a70299, #530101);
+    background: linear-gradient(#01038b, #5a0047);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
