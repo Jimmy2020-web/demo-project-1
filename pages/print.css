@@ -33,13 +33,19 @@ body {
     position: relative;
     text-align: justify;
     font-size: 22px;
-    padding: 1.6rem 1rem;
     height: 5in;
     border: 20px solid transparent;
     border-image: url(./finalb.jpg) 155 round;
-    background-image: url(./dg.jpg);
-    background-size: 5rem;
+    background-image: url(./bd2.png);
+    background-size: 22rem;
     outline: 1.5px solid;
+}
+
+.bdControl{
+    padding: 1.6rem 1rem;
+    width: 95%;
+    height: 89%;
+    background: #ffffff8f;
 }
 .pageTitle {
     text-align: center;

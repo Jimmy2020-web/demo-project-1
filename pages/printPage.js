@@ -56,11 +56,11 @@ function cuerntdate() {
 }
 cuerntdate();
 
-function printItem() {
-  window.print();
-  window.close();
-}
+// function printItem() {
+//   window.print();
+//   window.close();
+// }
 
-setTimeout(() => {
-  printItem();
-}, 1000);
+// setTimeout(() => {
+//   printItem();
+// }, 1000);
