@@ -13,6 +13,9 @@ const post_name = localStorage.getItem("post_name");
 const chairName = localStorage.getItem("chair");
 const boiID = localStorage.getItem("boiID");
 
+const upTitle = document.querySelector("#upTitle");
+const upAddress = document.querySelector("#upAdd");
+const upChairman = document.querySelector("#upChairman");
 const SName =document.getElementById("SName");
 const FSname =document.getElementById("FSname");
 const Mname =document.getElementById("Mname");
@@ -29,6 +32,9 @@ const ps2 = document.getElementById("ps2");
 const Dis2 = document.getElementById("Dis2");
 const sobav = document.getElementById("sobav");
 
+upTitle.innerHTML = UPNameI;
+upChairman.innerHTML = chairName;
+upAddress.innerHTML = `${PolishSName},${disName}।`;
 SName.innerHTML = selfName;
 FSname.innerHTML = fh_name;
 Mname.innerHTML = mother_name;
