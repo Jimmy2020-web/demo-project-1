@@ -219,7 +219,11 @@ function getItem3(union, chair) {
 }
 
 function next() {
-  window.open("https://www.youtube.com/channel/UCdO1hd0vkL2kc-_p8H5nzYw", "");
+  window.open(
+    "https://www.youtube.com/channel/UCdO1hd0vkL2kc-_p8H5nzYw",
+    "",
+    "width=700px"
+  );
   const printIT = localStorage.getItem("printIT");
   progress1.classList.replace("dnone", "dblock");
   localStorage.setItem("dis", dis.value);
@@ -271,7 +275,8 @@ function setInfo() {
 }
 
 function next2() {
-  window.open("https://www.youtube.com/watch?v=9LPO_TNUheA", "").focus();
+  window
+    .open("https://www.youtube.com/watch?v=9LPO_TNUheA", "", "width=700px");
   setInfo();
   progress2.classList.replace("dnone", "dblock");
   slidre.classList.replace("anis-box", "anis-box2");
@@ -299,11 +304,11 @@ function next2() {
 
 function back2() {
   window
-    .open("https://www.youtube.com/watch?v=b9kPqCK9gPA", "")
+    .open("https://www.youtube.com/watch?v=b9kPqCK9gPA", "", "width=700px")
     .focus();
   progress2.classList.replace("dblock", "dnone");
   slidre.classList.replace("anis-box2", "anis-box");
 }
 
 function printA4() {
-  window.open("./pages/printPage.html", "", "width=700px")};
+  window.open("./pages/printPage.html", "")};
