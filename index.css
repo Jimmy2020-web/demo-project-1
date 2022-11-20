@@ -141,6 +141,12 @@ main .card-box {
     font-size: 10px;
     border-top-left-radius: 35px !important;
     border-bottom-left-radius: 35px !important;
+    transform: translateX(235px);
+    transition: all .5s ease;
+}
+
+.dinfodaa{
+    transform: translateX(0px);
 }
 
 .dignerInfo .info1 {

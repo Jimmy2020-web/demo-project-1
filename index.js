@@ -34,12 +34,18 @@ function poptime() {
 
 setTimeout(() => {
   poptime();
+  infoAdd();
 }, 9000);
 
 const closePop = document.querySelector("#time");
 closePop.addEventListener("click", () => {
   popUp.classList.replace("dpopb", "dpop");
+  infoAdd();
 });
+
+function infoAdd() {
+  document.querySelector(".dignerInfo").classList.add("dinfodaa");
+}
 
 var lung = document.getElementById("lun");
 var isShow = true;
