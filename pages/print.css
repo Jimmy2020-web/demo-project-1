@@ -37,7 +37,9 @@ body {
     font-size: 22px;
     height: 6.7in;
     border: 20px solid transparent;
-    border-image: url(./finalb.jpg) 155 round;
+    border-image-source: url(./BD24.jpg);
+    border-image-slice: 50;
+    border-image-repeat: initial;
     background-image: url(./bd2.png);
     background-size: 22rem;
     outline: 1.5px solid;
