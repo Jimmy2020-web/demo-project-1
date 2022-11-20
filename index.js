@@ -53,43 +53,9 @@ var isShow = true;
 lung.addEventListener("click", () => {
   if (isShow) {
     lung.innerHTML = `English <i class="fa-sharp fa-solid fa-earth-americas"></i>`;
-    document.querySelector("#boibhik").innerHTML = "Marriage Certificate";
-    document.querySelector("#nagorik").innerHTML = "Citizenship Certificate";
-    document.querySelector(
-      "#stats"
-    ).innerHTML = `1st <i class="fa-solid fa-arrow-right"></i>`;
-    document.querySelector(
-      "#stats1"
-    ).innerHTML = `2nd <i class="fa-solid fa-arrow-right"></i>`;
-    document.querySelector(
-      "#stats2"
-    ).innerHTML = `3rd <i class="fa-solid fa-arrow-right"></i>`;
-    document.querySelector("#title").innerHTML =
-      "Fill in the permanent address :-";
-    document.querySelector(".addInfoD").innerHTML =
-      "District:";
-    document.querySelector(".addInfoT").innerHTML = "Upazila:";
-    document.querySelector(".addInfoU").innerHTML = "Union:";
-    document.querySelector(".addInfoC").innerHTML = "Chairman:";
     isShow = false;
   } else {
     lung.innerHTML = `বাংলা <i class="fa-sharp fa-solid fa-earth-americas"></i>`;
-    document.querySelector("#boibhik").innerHTML = "বৈবাহিক সনদ";
-    document.querySelector("#nagorik").innerHTML = "নাগরিকত্ব সনদ";
-    document.querySelector(
-      "#stats"
-    ).innerHTML = `১ম <i class="fa-solid fa-arrow-right"></i>`;
-    document.querySelector(
-      "#stats1"
-    ).innerHTML = `২য় <i class="fa-solid fa-arrow-right"></i>`;
-    document.querySelector(
-      "#stats2"
-    ).innerHTML = `৩য় <i class="fa-solid fa-arrow-right"></i>`;
-    document.querySelector("#title").innerHTML = "স্থায়ী ঠিকানা পূরণ করুন :-";
-    document.querySelector(".addInfoD").innerHTML = "জেলাঃ";
-    document.querySelector(".addInfoT").innerHTML = "উপজেলাঃ";
-    document.querySelector(".addInfoU").innerHTML = "ইউনিয়নঃ";
-    document.querySelector(".addInfoC").innerHTML = "চেয়ারম্যানঃ";
     isShow = true;
   }
 });

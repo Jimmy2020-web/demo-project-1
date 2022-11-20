@@ -47,11 +47,14 @@ body {
     padding: 1.6rem 1rem;
     width: 95.5%;
     height: 94%;
-    background: #ffffff8f;
+    background: #ffffff80;
     padding-top: 10px;
 }
 .hed{
     text-align: center;
+    background: linear-gradient(90deg, #ff0022, #1b2c2c, #1a00fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hid{
@@ -64,9 +67,12 @@ body {
 }
 
 .pageTitle {
-    border: 2px solid;
+    border: 2px solid #bf4402;
     border-radius: 10px;
     padding: 5px 10px;
+    background: linear-gradient(90deg, #ff0022, #1b2c2c, #1a00fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .printPara {

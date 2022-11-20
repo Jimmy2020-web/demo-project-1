@@ -34,7 +34,7 @@ const sobav = document.getElementById("sobav");
 
 upTitle.innerHTML = UPNameI;
 upChairman.innerHTML = chairName;
-upAddress.innerHTML = `${PolishSName},${disName}।`;
+upAddress.innerHTML = `উপজেলাঃ ${PolishSName}, জেলাঃ ${disName}।`;
 SName.innerHTML = selfName;
 FSname.innerHTML = fh_name;
 Mname.innerHTML = mother_name;
