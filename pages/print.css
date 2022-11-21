@@ -42,7 +42,7 @@ body {
     border-image-repeat: initial;
     background-image: url(./bd2.png);
     background-size: 22rem;
-    outline: 1.5px solid;
+    outline: 1.5px solid #1a00fd;
 }
 
 .bdControl{
