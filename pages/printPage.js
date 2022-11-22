@@ -62,6 +62,12 @@ function cuerntdate() {
 }
 cuerntdate();
 
+const btnClose = document.getElementById("btnClose");
+
+btnClose.addEventListener("click", () => {
+  document.querySelector(".printTut").classList.add("tuHeid");
+})
+
 // function printItem() {
 //   window.print();
 //   window.close();

@@ -235,6 +235,10 @@ main .card-box {
     -webkit-text-fill-color: transparent;
 }
 
+.printTut img {
+    width: 12rem;
+}
+
 .card {
     display: grid;
     justify-content: space-between;
