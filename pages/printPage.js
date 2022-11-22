@@ -75,4 +75,4 @@ btnClose.addEventListener("click", () => {
 
 setTimeout(() => {
   document.querySelector(".printTut").classList.add("tuHeid");
-}, 1000);
+}, 3000);

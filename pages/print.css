@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif, NikoshBAN;
+    font-family: 'Poppins', sans-serif, Nikosh, NikoshBAN;
     -webkit-print-color-adjust: exact !important;
     color-adjust: exact !important;
 }
@@ -148,7 +148,7 @@ div#bdlogo img {
     top: 1rem;
     right: 1.2rem;
     font-size: 18px;
-    font-family: NikoshBAN;
+    font-family: NikoshBAN, Nikosh;
 }
 
 #one{
