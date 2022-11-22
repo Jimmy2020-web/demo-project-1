@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif, Nikosh, NikoshBAN;
+    font-family: 'Poppins', sans-serif, NikoshBAN;
 }
 
 .pageOutsid {
@@ -63,6 +63,16 @@ body {
     font-size: 14px;
 }
 
+div#bdlogo {
+    position: absolute;
+    left: 3rem;
+    top: 4rem;
+}
+
+div#bdlogo img {
+    width: 6.5rem;
+}
+
 .pageTitleC {
     text-align: center;
     font-size: 30px;
@@ -91,8 +101,8 @@ body {
 
 #cdate {
     position: absolute;
-    top: 2rem;
-    right: 1.5rem;
+    top: 1rem;
+    right: 1.2rem;
     font-size: 18px;
     font-family: NikoshBAN;
 }
@@ -103,8 +113,8 @@ body {
 
 #Cinfo {
     position: absolute;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 1rem;
+    right: 1rem;
     font-size: 20px;
     text-align: center !important;
 }
