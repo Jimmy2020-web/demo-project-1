@@ -16,6 +16,8 @@
 
 body {
     font-family: 'Poppins', sans-serif, NikoshBAN;
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
 }
 
 .pageOutsid {
@@ -104,7 +106,7 @@ body {
 div#bdlogo {
     position: absolute;
     left: 3rem;
-    top: 4rem;
+    top: 5rem;
 }
 
 div#bdlogo img {

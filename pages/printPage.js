@@ -73,6 +73,6 @@ btnClose.addEventListener("click", () => {
 //   window.close();
 // }
 
-// setTimeout(() => {
-//   printItem();
-// }, 1000);
+setTimeout(() => {
+  document.querySelector(".printTut").classList.add("tuHeid");
+}, 1000);
