@@ -32,7 +32,13 @@ const upName2 = document.getElementById("upName2");
 const ps2 = document.getElementById("ps2");
 const Dis2 = document.getElementById("Dis2");
 const sobav = document.getElementById("sobav");
-const Phone = document.getElementById("Phone");
+let Phone = document.getElementById("Phone");
+
+if (UPNameI === "০৭নং একডালা"){
+  Phone.innerHTML = "মোবাইল: ০১৭১৩-৭৮১২১৯";
+}else{
+  Phone.innerHTML = "";
+}
 
 upTitle.innerHTML = UPNameI;
 upChairman.innerHTML = chairName;
@@ -53,7 +59,7 @@ chariman_name.innerHTML = chairName;
 upName2.innerHTML = UPNameI;
 ps2.innerHTML = PolishSName;
 Dis2.innerHTML = disName;
-Phone.innerHTML = `মোবাইল: ${Phone07}`;
+
 
 function cuerntdate() {
   let today = new Date();
