@@ -12,6 +12,7 @@ const w_name = localStorage.getItem("w_name");
 const post_name = localStorage.getItem("post_name");
 const chairName = localStorage.getItem("chair");
 const boiID = localStorage.getItem("boiID");
+const Phone07 = localStorage.getItem("phone07");
 
 const upTitle = document.querySelector("#upTitle");
 const upAddress = document.querySelector("#upAdd");
@@ -31,6 +32,7 @@ const upName2 = document.getElementById("upName2");
 const ps2 = document.getElementById("ps2");
 const Dis2 = document.getElementById("Dis2");
 const sobav = document.getElementById("sobav");
+const Phone = document.getElementById("Phone");
 
 upTitle.innerHTML = UPNameI;
 upChairman.innerHTML = chairName;
@@ -51,6 +53,7 @@ chariman_name.innerHTML = chairName;
 upName2.innerHTML = UPNameI;
 ps2.innerHTML = PolishSName;
 Dis2.innerHTML = disName;
+Phone.innerHTML = `মোবাইল: ${Phone07}`;
 
 function cuerntdate() {
   let today = new Date();

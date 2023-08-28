@@ -175,6 +175,7 @@ function getItem3(union, chair) {
     var optionrry = ["মোঃ জাহিদুর রহমান"];
   } else if (union == "০৭নং একডালা") {
     var optionrry = ["আলহাজ্ব ইঞ্জিনিয়ার মোঃ শাহজাহান আলী"];
+    localStorage.setItem("Phone07", "০১৭১৩ ৭৮১২১৯");
   } else if (union == "০৫নং বড়গাছা") {
     var optionrry = ["মোঃ আব্দুল মতিন মাষ্টার"]
   } else {
