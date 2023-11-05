@@ -160,7 +160,7 @@ function getItem2(polish, union) {
 function getItem3(union, chair) {
   var union = document.getElementById("union").value;
   var chair = document.getElementById("chair");
-
+  // আলহাজ্ব ইঞ্জিনিয়ার মোঃ শাহজাহান আলী
   chair.innerHTML = "";
 
   if (union == "০২নং কাশিমপুর") {
@@ -174,7 +174,7 @@ function getItem3(union, chair) {
   } else if (union == "০৪নং পারইল") {
     var optionrry = ["মোঃ জাহিদুর রহমান"];
   } else if (union == "০৭নং একডালা") {
-    var optionrry = ["আলহাজ্ব ইঞ্জিনিয়ার মোঃ শাহজাহান আলী"];
+    var optionrry = ["Payment Due 500/- Tk Pay to Hakim"];
   } else if (union == "০৫নং বড়গাছা") {
     var optionrry = ["মোঃ আব্দুল মতিন মাষ্টার"]
   } else {
