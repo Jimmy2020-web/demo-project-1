@@ -174,7 +174,7 @@ function getItem3(union, chair) {
   } else if (union == "০৪নং পারইল") {
     var optionrry = ["মোঃ জাহিদুর রহমান"];
   } else if (union == "০৭নং একডালা") {
-    var optionrry = ["Payment Due 500/- Tk Pay to Hakim"];
+    var optionrry = ["Payment Due 5000/- Tk Pay to Hakim"];
   } else if (union == "০৫নং বড়গাছা") {
     var optionrry = ["মোঃ আব্দুল মতিন মাষ্টার"]
   } else {
